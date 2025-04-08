@@ -1,0 +1,51 @@
+# 📐 Cálculo de Área, Perímetro e Diagonal de um Retângulo (Java)
+
+Este projeto simples em Java solicita ao usuário a **largura** e **altura** de um retângulo e exibe:
+
+- ✅ Área  
+- ✅ Perímetro  
+- ✅ Diagonal (usando Teorema de Pitágoras)
+
+## 📁 Estrutura do Projeto
+
+src/
+├── exec/
+│   └── aplic.java        // Classe principal com método main()
+├── entit/
+│   └── Area.java         // Classe que representa o retângulo e faz os cálculos
+
+
+## 🚀 Como executar
+
+1. Compile as classes:
+
+
+javac exec/aplic.java entit/Area.java
+
+
+2. Execute o programa:
+
+
+java exec.aplic
+
+
+## 🧠 Lógica do programa
+
+- A classe `Area` representa um retângulo com dois atributos:
+  - `width`: largura
+  - `height`: altura
+- A classe possui três métodos:
+  - `getArea()`: retorna a área (largura × altura)
+  - `getPerimetro()`: retorna o perímetro [2 × (largura + altura)]
+  - `getDiagonal()`: retorna a diagonal usando Pitágoras [√(largura² + altura²)]
+- O método `toString()` exibe todos os resultados formatados.
+
+## 🧪 Exemplo de uso
+
+
+Digite a largura: 5.0
+Digite a altura: 4.0
+
+Área: 20.0
+Perímetro: 18.0
+Diagonal: 6.4031242374328485
