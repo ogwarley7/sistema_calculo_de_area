@@ -1,0 +1,65 @@
+Main Class
+package exec;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entit.Area;
+
+public class aplic {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Area measure = new Area();
+		Locale.setDefault(Locale.US);
+		System.out.print("Digite a largura: ");
+		measure.width = sc.nextDouble();
+		
+		System.out.print("Digite a altura: ");
+		measure.height = sc.nextDouble();
+		
+	
+		System.out.println(measure);
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}
+
+
+Classe Area( para executar os calculos)
+
+package entit;
+
+public class Area {
+    public double width;
+    public double height;
+ 
+    public double getArea() {
+        return height * width;
+    }
+
+    public double getPerimetro() {
+        return 2 * (height + width);
+    }
+
+    public double getDiagonal() {
+        return Math.sqrt(Math.pow(height, 2) + Math.pow(width, 2));
+    }
+
+    public String toString() {
+        return "Área: " + getArea()
+            + "\nPerímetro: " + getPerimetro()
+            + "\nDiagonal: " + getDiagonal();
+           
+    }
+    
+    
+}
+
